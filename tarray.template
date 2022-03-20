@@ -1,0 +1,46 @@
+
+template <class T>
+Tarray<T>::Tarray() {
+    capacity = 5;
+    used = 0;
+    current_index = 0;
+
+    data = new T[capacity];
+}
+
+template <class T>
+void Tarray<T>::add(T item) {
+
+}
+
+template <class T>
+void Tarray<T>::start() {
+
+}
+
+template <class T>
+bool Tarray<T>::is_item() const {
+    // TODO
+    return false;
+}
+
+template <class T>
+void Tarray<T>::advance() {
+
+}
+
+template <class T>
+T Tarray<T>::current() const {
+    //TODO
+    return T();
+}
+
+template <class T>
+void Tarray<T>::remove_current() {
+
+}
+
+template <class T>
+void Tarray<T>::resize() {
+
+}
