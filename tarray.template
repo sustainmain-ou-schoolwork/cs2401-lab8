@@ -1,4 +1,3 @@
-
 template <class T>
 Tarray<T>::Tarray() {
     capacity = 5;
@@ -10,7 +9,13 @@ Tarray<T>::Tarray() {
 
 template <class T>
 void Tarray<T>::add(T item) {
+    if (used >= capacity) {
+        resize();
+    }
 
+    data[used] = item;
+    used++;
+    advance();
 }
 
 template <class T>
